@@ -1,13 +1,5 @@
 function getFastestCar(cars) {
-  let fastestCar = { speed: 0 };
-  for (let index = 0; index < cars.length; index++) {
-    const car = cars[index];
-    if (car.speed > fastestCar.speed) {
-      fastestCar = car;
-    }
-  }
-
-  return fastestCar;
+  return cars.sort((car1, car2) => car2.speed - car1.speed)[0];
 }
 
 const cars = [
