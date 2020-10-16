@@ -14,7 +14,7 @@ function addMultiplicationTable() {
 
       if (column === 0) text = row + 1;
 
-      if ((tableRow * tableColumn) % 3 === 0)
+      if (((row + 1) * (column + 1)) % 3 === 0)
         tableColumn.style.backgroundColor = 'yellow';
 
       tableColumn.innerText = text;
